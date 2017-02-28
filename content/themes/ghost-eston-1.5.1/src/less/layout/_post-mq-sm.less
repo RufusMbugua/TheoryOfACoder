@@ -1,0 +1,84 @@
+//
+// Post Media Queries Small.
+// -----------------------------------------------------------------------------
+// Post layout styles.
+//
+
+// Media Queries.
+@media( min-width: @break-two-query ) {
+  .post {
+    margin-bottom: @space * 1.75;
+  }
+  .post-item {
+    float: left;
+    width: 100%;
+    padding: @space * 1.5;
+  }
+  .post-body {
+    margin-top: -@space * 1.5;
+  }
+  .post-wrapper {
+    max-width: @type-max-two;
+  }
+  .post-title {
+    margin-bottom: ( @space * 1.5 ) - 7px;
+  }
+  .post-tags {
+    margin-top: 0;
+  }
+  .post-title + .post-tags {
+    margin-top: -@space / 2;
+  }
+  .post-footer .post-wrapper:before,
+  .post-comments .post-wrapper:before {
+    top: -@space * 1.5;
+  }
+}
+@media( min-width: @break-three-query ) {
+  .post {
+    margin-bottom: @space * 2.25;
+  }
+  .post-item {
+    float: left;
+    width: 100%;
+    padding: @space * 2;
+  }
+  .post-body {
+    margin-top: -@space * 2;
+  }
+  .post-wrapper {
+    max-width: @type-max-three;
+  }
+  .post-title {
+    margin-top: -8px;
+    margin-bottom: @space * 2 - 8px;
+  }
+  [data-js~="share"]:before {
+    margin-right: 8px;
+  }
+  .post-meta .meta-plural {
+    display: inline;
+  }
+  .post-meta .meta-item {
+    padding-right: @space;
+  }
+  .post-meta .meta-share .popup {
+    margin-bottom: @space;
+    transform: translate( 50%, 0 );
+  }
+  .post-meta .meta-share .popup,
+  .post-meta .meta-share .popup:before,
+  .post-meta .meta-share .popup:after {
+    right: 50%;
+  }
+  .post-meta .meta-share .popup[data-ani="slide-in-up"] {
+    animation-name: slide-in-up-mid;
+  }
+  .post-meta .meta-share .popup[data-ani="fade-out-down"] {
+    animation-name: fade-out-down-mid;
+  }
+  .post-footer .post-wrapper:before,
+  .post-comments .post-wrapper:before {
+    top: -@space * 2;
+  }
+}

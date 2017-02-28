@@ -1,0 +1,29 @@
+//
+// Typography Media Queries Large.
+// -----------------------------------------------------------------------------
+// Typography styles and helper classes.
+//
+
+// Media Queries.
+@media screen and ( min-width: @break-five-query ) {
+  h1,
+  .h1 {
+    font-size: 2.25rem;
+    line-height: @space * 3.5;
+  }
+  h2,
+  .h2 {
+    font-size: 2rem;
+    line-height: @space * 2.75;
+  }
+}
+@media ( min-width: @break-six-query ) {
+  html,
+  .root {
+    font-size: 17px;
+  }
+  body,
+  .p {
+    line-height: @space * 1.75;
+  }
+}

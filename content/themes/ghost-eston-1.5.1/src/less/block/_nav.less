@@ -1,0 +1,40 @@
+//
+// Nav.
+// -----------------------------------------------------------------------------
+// A horizontal collection of links / items.
+//
+// <div class="nav">
+//   <a class="nav-link">Home</a>
+//   <span class="nav-item">User</span>
+// </div>
+//
+
+// Block.
+.nav {
+  &:extend( .s2 );
+  &:extend( .whitespace );
+  float: left;
+  width: 100%;
+}
+.nav > .nav-item:first-child {
+  margin-left: 0;
+}
+.nav > .nav-item:last-child {
+  &:extend( .wrapper > *:last-child );
+  margin-right: 0;
+}
+
+// Elements.
+.nav-item {
+  display: inline-block;
+  margin-right: @space / 2;
+  margin-left: @space / 2;
+}
+.nav-item a {
+  display: block;
+}
+.nav-text {
+  clip: rect(0, 0, 0, 0);
+  display: inherit;
+  position: absolute;
+}

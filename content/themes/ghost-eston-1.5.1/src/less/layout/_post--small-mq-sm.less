@@ -1,0 +1,34 @@
+//
+// Post Small Media Queries Small.
+// -----------------------------------------------------------------------------
+// Post that is half the size of a normal post, ala square. Always in pairs.
+//
+
+// Media Queries.
+@media( min-width: @break-three-query ) {
+  .post--small {
+    width: 50%;
+    padding-top: 50%;
+  }
+  // Always set the second element to have a margin.
+  .post--small + .post--small {
+    margin-bottom: @space * 1.25;
+  }
+  // To counter whitespace from `.post-inner`, use a negative margin.
+  // If the second element is last, use a negative margin as well.
+  .post--small,
+  .post--small + .post--small:last-child {
+    margin-bottom: -@space * 1.25;
+  }
+  .post--small .post-inner {
+    right: @space * 1.125;
+    bottom: @space * 1.125;
+  }
+  .post--small + .post--small .post-inner {
+    right: 0;
+    left: @space * 1.125;
+  }
+  .post--small .post-item {
+    padding: @space;
+  }
+}

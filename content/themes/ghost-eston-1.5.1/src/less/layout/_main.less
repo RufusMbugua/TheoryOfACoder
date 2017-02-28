@@ -1,0 +1,35 @@
+//
+// Main.
+// -----------------------------------------------------------------------------
+// Layout styles for Main.
+
+// Block.
+.main {
+  float: left;
+  width: 100%;
+  padding-top: @space * .75;
+  padding-bottom: @space * 1.5;
+}
+.main > *:last-child {
+  &:extend( .wrapper > *:last-child );
+}
+
+// Elements.
+.main-pager {
+  padding-top: @space * 1.5;
+}
+.main-pager .nav--pager {
+  float: right;
+  width: auto;
+  margin-bottom: 0;
+}
+.main-pager .nav-next {
+  position: relative;
+}
+.main-pager .nav-prev + .nav-next:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -@space / 2;
+  content: '';
+}

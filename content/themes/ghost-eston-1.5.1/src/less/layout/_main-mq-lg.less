@@ -1,0 +1,35 @@
+//
+// Main Media Queries Large.
+// -----------------------------------------------------------------------------
+// Layout styles for Main.
+
+// Media Queries.
+@media( min-width: @break-four-query ) {
+  .main {
+    padding-top: @space * 1.5;
+    padding-bottom: @space * 3;
+  }
+  .main-pager {
+    padding-top: @space * 3;
+  }
+}
+@media( min-width: @break-five-query ) {
+  .main {
+    padding-top: @space * 5;
+    padding-bottom: @space * 5;
+    padding-left: ( @space * 5 ) + @sidebar;
+  }
+  .main-pager {
+    padding-top: @space * 5;
+  }
+}
+@media( min-width: @break-six-query ) {
+  .main {
+    padding-top: @space * 7;
+    padding-bottom: @space * 7;
+    padding-left: ( @space * 7 ) + @sidebar;
+  }
+  .main-pager {
+    padding-top: @space * 7;
+  }
+}

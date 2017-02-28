@@ -1,0 +1,27 @@
+//
+// Post Small.
+// -----------------------------------------------------------------------------
+// Post that is half the size of a normal post, ala square. Always in pairs.
+//
+
+// Block.
+.post--small {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-top: 100%;
+}
+
+// Elements.
+.post--small .post-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+}
+.post--small .post-wrapper {
+  max-width: 100%;
+}

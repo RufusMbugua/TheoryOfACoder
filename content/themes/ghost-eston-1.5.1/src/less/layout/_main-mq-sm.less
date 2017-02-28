@@ -1,0 +1,22 @@
+//
+// Main Media Queries Small.
+// -----------------------------------------------------------------------------
+// Layout styles for Main.
+
+// Media Queries.
+@media( min-width: @break-three-query ) {
+  .main {
+    padding-top: @space * 1;
+    padding-bottom: @space * 2;
+  }
+  .main-pager {
+    padding-top: @space * 2;
+  }
+  .main-pager .nav-item {
+    margin-right: @space;
+    margin-left: @space;
+  }
+  .main-pager .nav-prev + .nav-next:before {
+    left: -@space;
+  }
+}

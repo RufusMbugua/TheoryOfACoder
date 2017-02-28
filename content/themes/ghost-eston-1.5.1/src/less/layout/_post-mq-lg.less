@@ -1,0 +1,85 @@
+//
+// Post Media Queries Large.
+// -----------------------------------------------------------------------------
+// Post layout styles.
+//
+
+// Media Queries.
+@media( min-width: @break-four-query ) {
+  .post {
+    margin-bottom: @space * 3.25;
+  }
+  .post-item {
+    float: left;
+    width: 100%;
+    padding: @space * 3;
+  }
+  .post-body {
+    margin-top: -@space * 3;
+  }
+  .post-title {
+    margin-bottom: @space * 2.5;
+  }
+  .post-tags {
+    margin-top: @space;
+  }
+  .post-footer .post-wrapper:before,
+  .post-comments .post-wrapper:before {
+    top: -@space * 3;
+  }
+  .post-wrapper {
+    max-width: @type-max-four;
+  }
+}
+@media( min-width: @break-five-query ) {
+  .post {
+    margin-bottom: @space * 5.125;
+  }
+  .post-item {
+    padding: @space * 2.5;
+  }
+  .post-body {
+    margin-top: -@space * 2.5;
+  }
+  .post-wrapper {
+    max-width: @img-max-two;
+  }
+  .post-title {
+    margin-top: -10px;
+    margin-bottom: @space * 2.5 - 10px;
+  }
+  .post-tags {
+    margin-top: 8px;
+  }
+  .post-footer .post-wrapper:before,
+  .post-comments .post-wrapper:before {
+    top: -@space * 2.5;
+  }
+}
+@media( min-width: @break-six-query ) {
+  .post {
+    margin-bottom: @space * 7.125;
+  }
+  .post-item {
+    float: left;
+    width: 100%;
+    padding: @space * 3.5;
+  }
+  .post-body {
+    margin-top: -@space * 3.5;
+  }
+  .post-wrapper {
+    max-width: @type-max-five;
+  }
+  .post-title {
+    margin-top: -10px;
+    margin-bottom: @space * 3.5 - 10px;
+  }
+  .post-tags {
+    margin-top: @space * 1.5;
+  }
+  .post-footer .post-wrapper:before,
+  .post-comments .post-wrapper:before {
+    top: -@space * 3.5;
+  }
+}

@@ -62,7 +62,7 @@
     "rss": "1.2.1",
     "semver": "5.1.0",
     "showdown-ghost": "0.3.6",
-    "sqlite3": "3.1.1",
+    "sqlite3": "^3.1.1",
     "unidecode": "0.1.8",
     "validator": "4.5.0",
     "xml": "1.0.1"
@@ -105,6 +105,16 @@
     "top-gh-contribs": "2.0.2"
   },
   "greenkeeper": {
-    "ignore": ["bower", "bluebird", "glob", "lodash", "mysql", "nodemailer", "pg", "showdown-ghost", "validator"]
+    "ignore": [
+      "bower",
+      "bluebird",
+      "glob",
+      "lodash",
+      "mysql",
+      "nodemailer",
+      "pg",
+      "showdown-ghost",
+      "validator"
+    ]
   }
 }

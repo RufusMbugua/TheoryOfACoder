@@ -1,0 +1,24 @@
+{{!
+
+    Renders:
+      Author Link
+      Author Image
+      Author Name
+
+    Microdata:
+      Author
+
+}}
+
+{{^is "page"}}
+  {{#author}}
+    <a href="{{url}}" class="avatar post-author">
+      {{#if image}}
+      <span class="avatar-item avatar-img">
+        <amp-img src="{{image absolute="true"}}" alt="{{name}}" width="34" height="34" layout="fixed"></amp-img>
+      </span>
+      {{/if}}
+      <span itemprop="author" class="avatar-item">{{name}}</span>
+    </a>
+  {{/author}}
+{{/is}}

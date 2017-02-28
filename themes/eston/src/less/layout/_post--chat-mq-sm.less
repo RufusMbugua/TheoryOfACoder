@@ -1,0 +1,20 @@
+//
+// Post Chat Media Queries Small.
+// -----------------------------------------------------------------------------
+// Post of the chat type.
+//
+
+// Media queries.
+@media( min-width: @break-three-query ) {
+  .post--chat .post-body .post-wrapper > ul:first-child > li {
+    display: table-row;
+    padding-bottom: 0;
+  }
+  .post--chat .post-body .post-wrapper > ul:first-child > li > strong,
+  .post--chat .post-body .post-wrapper > ul:first-child > li > em {
+    display: table-cell;
+  }
+  .post--chat .post-body .post-wrapper > ul:first-child > li > strong {
+    padding-right: @space * 2;
+  }
+}

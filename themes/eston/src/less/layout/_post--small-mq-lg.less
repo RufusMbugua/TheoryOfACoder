@@ -1,0 +1,65 @@
+//
+// Post Small Media Queries Large.
+// -----------------------------------------------------------------------------
+// Post that is half the size of a normal post, ala square. Always in pairs.
+//
+
+// Media Queries.
+@media( min-width: @break-four-query ) {
+  .post--small + .post--small {
+    margin-bottom: @space * 1.625;
+  }
+  .post--small,
+  .post--small + .post--small:last-child {
+    margin-bottom: -@space * 1.625;
+  }
+  .post--small .post-inner {
+    right: @space * 1.625;
+    bottom: @space * 1.625;
+  }
+  .post--small + .post--small .post-inner {
+    right: 0;
+    left: @space * 1.625;
+  }
+  .post--small .post-item {
+    padding: @space * 1.5;
+  }
+}
+@media( min-width: @break-five-query ) {
+  .post--small + .post--small {
+    margin-bottom: @space * 2.5625;
+  }
+  .post--small,
+  .post--small + .post--small:last-child {
+    margin-bottom: -@space * 2.5625;
+  }
+  .post--small .post-inner {
+    right: @space * 2.5625;
+    bottom: @space * 2.5625;
+  }
+  .post--small + .post--small .post-inner {
+    left: @space 2.5625;
+  }
+  .post--small .post-item {
+    padding: @space;
+  }
+}
+@media( min-width: @break-six-query ) {
+  .post--small + .post--small {
+    margin-bottom: @space * 3.5625;
+  }
+  .post--small,
+  .post--small + .post--small:last-child {
+    margin-bottom: -@space * 3.5625;
+  }
+  .post--small .post-inner {
+    right: @space * 3.5625;
+    bottom: @space * 3.5625;
+  }
+  .post--small + .post--small .post-inner {
+    left: @space * 3.5625;
+  }
+  .post--small .post-item {
+    padding: @space * 2;
+  }
+}

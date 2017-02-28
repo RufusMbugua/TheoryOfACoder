@@ -1,0 +1,17 @@
+//
+// Header Media Queries Large.
+// -----------------------------------------------------------------------------
+// Skin for header.
+//
+
+// Media Queries.
+@media( min-width: @break-five-query ) {
+  .header-nav,
+  .header-links {
+    border-top: 0;
+  }
+  .header-nav .nav-item:first-child:before,
+  .header-links .nav-item:first-child:after {
+    border-top: 1px solid @nav-border;
+  }
+}

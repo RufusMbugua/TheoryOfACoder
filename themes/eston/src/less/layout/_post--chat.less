@@ -1,0 +1,33 @@
+//
+// Post Chat.
+// -----------------------------------------------------------------------------
+// Post of the chat type.
+//
+
+// Block.
+.post--chat {
+
+}
+
+// Elements.
+.post--chat .post-body .post-wrapper > ul:first-child {
+  &:extend( .dialogue );
+  margin-bottom: 0;
+}
+.post--chat .post-body .post-wrapper > ul:first-child > li {
+  &:extend( .dialogue-line );
+  float: none;
+  padding-left: 0;
+}
+.post--chat .post-body .post-wrapper > ul:first-child > li:before {
+  display: none;
+}
+.post--chat .post-body .post-wrapper > ul:first-child > li > strong {
+  &:extend( .dialogue-item, .dialogue-title );
+}
+.post--chat .post-body .post-wrapper > ul:first-child > li > em {
+  &:extend( .dialogue-item );
+}
+.post--chat .post-body .post-wrapper > ul:first-child > li:last-child {
+  &:extend( .dialogue > .dialogue-line:last-child );
+}

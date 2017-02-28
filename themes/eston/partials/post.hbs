@@ -40,6 +40,12 @@
     <section class="post-item post-body">
       <div class="wrapper post-wrapper">
 
+        {{! Comments Count }}
+      {{> "post/comments-count" }}
+
+        {{! Shares }}
+      {{> "post/shares" }}
+      
       {{! Title }}
       {{> "post/title" }}
 
@@ -49,11 +55,7 @@
       {{! Types }}
       {{> "post/types" }}
 
-      {{! Comments Count }}
-      {{> "post/comments-count" }}
 
-      {{! Shares }}
-      {{> "post/shares" }}
 
 {{! Content }}
 {{> "post/content" }}
